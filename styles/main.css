@@ -1,0 +1,100 @@
+html {
+    padding:0;
+    border: 0;
+    margin: 0;
+    
+}
+
+body {
+    font-size: 100%;
+    background-image: url("../assets/amanda-tall.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+section {
+    padding: 2%;
+    margin: 2%;
+    box-shadow: 3px 3px 10px 3px #888888;
+    box-shadow-blur:
+    border-style:groove;
+    border-width: 2px;
+    border-color: orange;
+    border-radius: 1px;
+}
+
+nav {
+    padding: 0 2%;
+    margin: 0 2%;
+}
+
+h1 {
+    font-family: "Abril Fatface", cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.5em;
+    text-transform: none;
+    text-decoration: none;
+    letter-spacing: 0em;
+    word-spacing: 0em;
+    line-height: 1.5;
+}
+
+h2 {
+    font-family: "PT Sans", sans-serif;
+}
+
+p {
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1em;
+    text-transform: none;
+    text-decoration: none;
+    letter-spacing: 0em;
+    word-spacing: 0em;
+    line-height: 1.5;
+}
+
+/* NavBar */
+.navbar-link {
+    text-align:right;
+    position: absolute;
+    right: 150px;
+    top: 25px;
+}
+
+.navbar-link li{
+    float: left;
+    padding: 15px;
+    margin: 15px;
+    list-style-type: none;
+}
+
+/* Bio */
+.singer-bio {
+    background:#fab909;
+    width: 600px;
+}
+
+.company-name {
+    font-style: italic;
+}
+/* Calendar */
+.calendar {
+    background:#fab909;
+    width: 600px;
+}
+
+/* Email Sign-up*/
+#mc_embed_signup{
+    background:#fab909;
+    width: 600px;
+    clear:left; 
+    font-family: "PT Sans", sans-serif;
+}
+
+@-ms-viewport{
+  width: device-width;
+}
