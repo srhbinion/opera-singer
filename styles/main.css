@@ -1,43 +1,32 @@
+/* sections */
 html {
     padding:0;
     border: 0;
     margin: 0;
-    
 }
 
 body {
-    font-size: 100%;
-    background-image: url("../assets/amanda-tall.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
+    width: 100%;
 }
 
 section {
     padding: 2%;
     margin: 2%;
-    box-shadow: 3px 3px 10px 3px #888888;
-    border-style:groove;
-    border-width: 2px;
-    border-color: orange;
-    border-radius: 1px;
+    width: 45%;
+    min-width: 250px;
+    background-color: #000033;
+    color: #e6f2ff;
 }
 
 nav {
-    padding: 0 2%;
-    margin: 0 2%;
+    border: 1px solid red;
 }
 
 h1 {
     font-family: "Abril Fatface", cursive;
     font-style: normal;
     font-weight: 400;
-    font-size: 2.5em;
-    text-transform: none;
-    text-decoration: none;
-    letter-spacing: 0em;
-    word-spacing: 0em;
-    line-height: 1.5;
+    font-size: 1.25em;
 }
 
 h2 {
@@ -51,9 +40,17 @@ p {
     font-size: 1em;
     text-transform: none;
     text-decoration: none;
-    letter-spacing: 0em;
-    word-spacing: 0em;
     line-height: 1.5;
+}
+
+a { 
+    text-decoration: none;
+}
+
+/* xx */
+
+.singer-title{
+    font-size: 24px;
 }
 
 /* NavBar */
@@ -73,16 +70,13 @@ p {
 
 /* Bio */
 .singer-bio {
-    background:#fab909;
-    width: 600px;
+    background: #fff;
+    color: #001a33;
 }
 
-.company-name {
-    font-style: italic;
-}
 /* Calendar */
 .calendar {
-    background:#fab909;
+    
     width: 600px;
 }
 
