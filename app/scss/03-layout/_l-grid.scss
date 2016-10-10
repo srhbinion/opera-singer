@@ -1,0 +1,58 @@
+/* ---------------------------------------------------------------------
+Grid
+--------------------------------------------------------------------- */
+.row {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    
+    & :before, :after {
+        display: table;
+        content: " "; 
+    }
+    
+    & :after {
+        clear: both;
+    }
+}
+
+/* 10 column */
+.column,
+.columns {
+    width: 100%;
+    float: left;
+    padding: 0 $gutter-width/2;
+    box-sizing: border-box;
+    //$gutter-width: 20px;
+}
+.one { 
+    width: 10% ;
+}
+.two {
+    width: 20%;
+}
+.three {
+    width: 30%;
+}
+.four { 
+    width: 40% ;
+}
+.five {
+    width: 50%;
+}
+.six {
+    width: 60%;
+}
+.seven {
+    width: 70%;
+}
+.eight { 
+    width: 80% ;
+}
+.nine {
+    width: 90%;
+}
+.ten {
+    width: 100%;
+}

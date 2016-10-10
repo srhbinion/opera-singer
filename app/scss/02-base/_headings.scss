@@ -1,0 +1,73 @@
+/* ---------------------------------------------------------------------
+ hList
+--------------------------------------------------------------------- */
+
+h1 {
+    font-family: "Abril Fatface", cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.25em;
+}
+
+h2 {
+    font-family: "PT Sans", sans-serif;
+}
+
+p {
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1em;
+    text-transform: none;
+    text-decoration: none;
+    line-height: 1.5;
+}
+
+a { 
+    text-decoration: none;
+}
+
+/* xx */
+
+.singer-title{
+    font-size: 24px;
+}
+
+/* NavBar */
+.navbar-link {
+    text-align:right;
+    position: absolute;
+    right: 150px;
+    top: 25px;
+}
+
+.navbar-link li{
+    float: left;
+    padding: 15px;
+    margin: 15px;
+    list-style-type: none;
+}
+
+/* Bio */
+.singer-bio {
+    background: #fff;
+    color: #001a33;
+}
+
+/* Calendar */
+.calendar {
+    
+    width: 600px;
+}
+
+/* Email Sign-up*/
+#mc_embed_signup{
+    background:#fab909;
+    width: 600px;
+    clear:left; 
+    font-family: "PT Sans", sans-serif;
+}
+
+@-ms-viewport{
+  width: device-width;
+}

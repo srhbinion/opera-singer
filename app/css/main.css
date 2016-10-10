@@ -1,0 +1,230 @@
+/*00-helper*/
+/* ---------------------------------------------------------------------
+Fonts
+--------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------
+Colors
+--------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------
+Size
+--------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------
+ RESET CSS (thanks Eric Meyer)
+--------------------------------------------------------------------- */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: inherit;
+  font-style: inherit;
+  font-family: inherit;
+  vertical-align: baseline; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+:focus {
+  outline: 0; }
+
+/* Always show a vertical scrollbar, even when there is no scrolling */
+html {
+  overflow-y: scroll; }
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+/* ---------------------------------------------------------------------
+ HTML5 Element Reset
+--------------------------------------------------------------------- */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, main {
+  display: block; }
+
+audio, canvas, video, progress, picture {
+  display: inline-block; }
+
+template {
+  display: none; }
+
+/* ---------------------------------------------------------------------
+ Form Reset Styles
+--------------------------------------------------------------------- */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  -webkit-appearance: none; }
+
+input[type="search"] {
+  -webkit-appearance: none;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box; }
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+  resize: vertical; }
+
+::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/*01-vendor*/
+/*02-base*/
+/* ---------------------------------------------------------------------
+ hList
+--------------------------------------------------------------------- */
+h1 {
+  font-family: "Abril Fatface", cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.25em; }
+
+h2 {
+  font-family: "PT Sans", sans-serif; }
+
+p {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1em;
+  text-transform: none;
+  text-decoration: none;
+  line-height: 1.5; }
+
+a {
+  text-decoration: none; }
+
+/* xx */
+.singer-title {
+  font-size: 24px; }
+
+/* NavBar */
+.navbar-link {
+  text-align: right;
+  position: absolute;
+  right: 150px;
+  top: 25px; }
+
+.navbar-link li {
+  float: left;
+  padding: 15px;
+  margin: 15px;
+  list-style-type: none; }
+
+/* Bio */
+.singer-bio {
+  background: #fff;
+  color: #001a33; }
+
+/* Calendar */
+.calendar {
+  width: 600px; }
+
+/* Email Sign-up*/
+#mc_embed_signup {
+  background: #fab909;
+  width: 600px;
+  clear: left;
+  font-family: "PT Sans", sans-serif; }
+
+@-ms-viewport {
+  width: device-width; }
+
+/*03-layout*/
+/* ---------------------------------------------------------------------
+Grid
+--------------------------------------------------------------------- */
+.row {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box; }
+  .row :before, .row :after {
+    display: table;
+    content: " "; }
+  .row :after {
+    clear: both; }
+
+/* 10 column */
+.column,
+.columns {
+  width: 100%;
+  float: left;
+  padding: 0 2px;
+  box-sizing: border-box; }
+
+.one {
+  width: 10%; }
+
+.two {
+  width: 20%; }
+
+.three {
+  width: 30%; }
+
+.four {
+  width: 40%; }
+
+.five {
+  width: 50%; }
+
+.six {
+  width: 60%; }
+
+.seven {
+  width: 70%; }
+
+.eight {
+  width: 80%; }
+
+.nine {
+  width: 90%; }
+
+.ten {
+  width: 100%; }
+
+/*04-modules*/
+/* ---------------------------------------------------------------------
+Navigation Bar
+--------------------------------------------------------------------- */
+body {
+  background: #D5D5D5; }
+
+.nav__primary {
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  height: 38px;
+  border-color: #c1bfbf #fefefe; }
+
+/*05-states*/

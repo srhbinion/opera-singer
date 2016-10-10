@@ -1,0 +1,24 @@
+{
+  "name": "opera-amanda",
+  "version": "1.0.0",
+  "description": "portfolio for amanda runge",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/srhbinion/opera-singer.git"
+  },
+  "author": "Sarah Binion",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/srhbinion/opera-singer/issues"
+  },
+  "homepage": "https://github.com/srhbinion/opera-singer#readme",
+  "devDependencies": {
+    "browser-sync": "^2.17.2",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2"
+  }
+}
