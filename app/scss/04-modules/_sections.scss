@@ -6,7 +6,7 @@ nav {
 }
 
 body {
-    background: #D5D5D5;
+    
 }
 
 .nav__primary {
@@ -14,5 +14,10 @@ body {
     border-bottom: 1px solid;
     height: 38px;
     border-color: #c1bfbf #fefefe;
+}
+
+.hero {
+    height: 200px;
+    background: $wine;
 }
 

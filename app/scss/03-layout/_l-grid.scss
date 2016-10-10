@@ -4,7 +4,7 @@ Grid
 .l--constrain {
   position: relative;
   margin: 0 auto;
-  border: 1px solid blue;
+  background-color: #d5d5d5;
   
   @media (max-width: map-get($breakpoints, large)) {
     width: 465px;
