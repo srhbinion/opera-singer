@@ -1,58 +1,79 @@
 /* ---------------------------------------------------------------------
 Grid
 --------------------------------------------------------------------- */
-.row {
-    width: 100%;
-    margin: 0 auto;
-    padding: 0;
-    box-sizing: border-box;
-    
-    & :before, :after {
-        display: table;
-        content: " "; 
-    }
-    
-    & :after {
-        clear: both;
-    }
+.l--constrain {
+  position: relative;
+  margin: 0 auto;
+  border: 1px solid blue;
+  
+  @media (max-width: map-get($breakpoints, large)) {
+    width: 465px;
+    height: 750px;
+  }
 }
 
-/* 10 column */
-.column,
-.columns {
-    width: 100%;
-    float: left;
-    padding: 0 $gutter-width/2;
-    box-sizing: border-box;
-    //$gutter-width: 20px;
-}
-.one { 
-    width: 10% ;
-}
-.two {
-    width: 20%;
-}
-.three {
-    width: 30%;
-}
-.four { 
-    width: 40% ;
-}
-.five {
-    width: 50%;
-}
-.six {
-    width: 60%;
-}
-.seven {
-    width: 70%;
-}
-.eight { 
-    width: 80% ;
-}
-.nine {
-    width: 90%;
-}
-.ten {
-    width: 100%;
+.grid {
+  margin: ($gutter/2);
+
+  //clearfix
+  &::after,
+  &::before {
+    display: table;
+    content: "";
+  }
+  
+  &::after {
+    clear: both;
+  }
+  
+  //root
+  @at-root {
+    [class^="grid__"]{
+      float: left;
+      padding: 0 (gutter-width/2);
+      margin: ($gutter/2) 0;
+      box-sizing: border-box;
+    }
+  }
+  
+  &--reverse > [class^="grid__"]{
+    float: right;
+  }
+  
+  /*grid*/
+  //quantity of columns
+  @for $number from 1 through 12 {
+    &__#{$number} {
+      width: percentage($number/12);
+    }
+  }
+  
+  /*media*/
+  //quantity of columns
+  @each $name, $size in $breakpoints {
+    @media (min-width: $size$name) {
+      @for $number from 1 through 12 {
+        &__#{$number}--#{$name} {
+          width: percentage($number/12);
+          background-color: red;
+        }
+      }
+    }
+  }
+  
+  @for $number from 1 through 11 {
+    &__offset-#{$number} {
+      margin-left: percentage($number/12);
+    }
+  }
+
+  @each $name, $size in $breakpoints {
+    @media (min-width: $size){
+      @for $number from 1 through 11 {
+        &__offset-#{$number}--#{$name} {
+          margin-left:percentage($number/12);
+        }
+      }
+    }
+  }
 }
