@@ -9,15 +9,24 @@ body {
     
 }
 
-.nav__primary {
-    border-top: 1px solid;
-    border-bottom: 1px solid;
-    height: 38px;
-    border-color: #c1bfbf #fefefe;
-}
-
 .hero {
-    height: 200px;
+    height: 350px;
     background: $wine;
 }
 
+.wrapper {
+  padding: 0 ($gutter*4);
+  background-color: green;
+  border: 1px solid red;
+}
+
+.navbar-link {
+    background-color: red;
+    height: 10px;
+}
+
+.footer {
+    height: 75px;
+    background: $wine;
+    margin-top: $gutter;
+}

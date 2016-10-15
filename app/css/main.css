@@ -178,111 +178,42 @@ Grid
     content: ""; }
   .grid::after {
     clear: both; }
-  [class^="grid__"] {
-    float: left;
-    padding: 0 gutter-width/2;
-    margin: 10px 0;
-    box-sizing: border-box; }
-  .grid--reverse > [class^="grid__"] {
-    float: right; }
   .grid__1 {
-    width: 8.33333%; }
+    width: 8.33333%;
+    border: 1px solid blue; }
   .grid__2 {
-    width: 16.66667%; }
+    width: 16.66667%;
+    border: 1px solid blue; }
   .grid__3 {
-    width: 25%; }
+    width: 25%;
+    border: 1px solid blue; }
   .grid__4 {
-    width: 33.33333%; }
+    width: 33.33333%;
+    border: 1px solid blue; }
   .grid__5 {
-    width: 41.66667%; }
+    width: 41.66667%;
+    border: 1px solid blue; }
   .grid__6 {
-    width: 50%; }
+    width: 50%;
+    border: 1px solid blue; }
   .grid__7 {
-    width: 58.33333%; }
+    width: 58.33333%;
+    border: 1px solid blue; }
   .grid__8 {
-    width: 66.66667%; }
+    width: 66.66667%;
+    border: 1px solid blue; }
   .grid__9 {
-    width: 75%; }
+    width: 75%;
+    border: 1px solid blue; }
   .grid__10 {
-    width: 83.33333%; }
+    width: 83.33333%;
+    border: 1px solid blue; }
   .grid__11 {
-    width: 91.66667%; }
+    width: 91.66667%;
+    border: 1px solid blue; }
   .grid__12 {
-    width: 100%; }
-  @media (min-width: 450px small) {
-    .grid__1--small {
-      width: 8.33333%;
-      background-color: red; }
-    .grid__2--small {
-      width: 16.66667%;
-      background-color: red; }
-    .grid__3--small {
-      width: 25%;
-      background-color: red; }
-    .grid__4--small {
-      width: 33.33333%;
-      background-color: red; }
-    .grid__5--small {
-      width: 41.66667%;
-      background-color: red; }
-    .grid__6--small {
-      width: 50%;
-      background-color: red; }
-    .grid__7--small {
-      width: 58.33333%;
-      background-color: red; }
-    .grid__8--small {
-      width: 66.66667%;
-      background-color: red; }
-    .grid__9--small {
-      width: 75%;
-      background-color: red; }
-    .grid__10--small {
-      width: 83.33333%;
-      background-color: red; }
-    .grid__11--small {
-      width: 91.66667%;
-      background-color: red; }
-    .grid__12--small {
-      width: 100%;
-      background-color: red; } }
-  @media (min-width: 1180px large) {
-    .grid__1--large {
-      width: 8.33333%;
-      background-color: red; }
-    .grid__2--large {
-      width: 16.66667%;
-      background-color: red; }
-    .grid__3--large {
-      width: 25%;
-      background-color: red; }
-    .grid__4--large {
-      width: 33.33333%;
-      background-color: red; }
-    .grid__5--large {
-      width: 41.66667%;
-      background-color: red; }
-    .grid__6--large {
-      width: 50%;
-      background-color: red; }
-    .grid__7--large {
-      width: 58.33333%;
-      background-color: red; }
-    .grid__8--large {
-      width: 66.66667%;
-      background-color: red; }
-    .grid__9--large {
-      width: 75%;
-      background-color: red; }
-    .grid__10--large {
-      width: 83.33333%;
-      background-color: red; }
-    .grid__11--large {
-      width: 91.66667%;
-      background-color: red; }
-    .grid__12--large {
-      width: 100%;
-      background-color: red; } }
+    width: 100%;
+    border: 1px solid blue; }
   .grid__offset-1 {
     margin-left: 8.33333%; }
   .grid__offset-2 {
@@ -305,65 +236,77 @@ Grid
     margin-left: 83.33333%; }
   .grid__offset-11 {
     margin-left: 91.66667%; }
-  @media (min-width: 450px) {
-    .grid__offset-1--small {
-      margin-left: 8.33333%; }
-    .grid__offset-2--small {
-      margin-left: 16.66667%; }
-    .grid__offset-3--small {
-      margin-left: 25%; }
-    .grid__offset-4--small {
-      margin-left: 33.33333%; }
-    .grid__offset-5--small {
-      margin-left: 41.66667%; }
-    .grid__offset-6--small {
-      margin-left: 50%; }
-    .grid__offset-7--small {
-      margin-left: 58.33333%; }
-    .grid__offset-8--small {
-      margin-left: 66.66667%; }
-    .grid__offset-9--small {
-      margin-left: 75%; }
-    .grid__offset-10--small {
-      margin-left: 83.33333%; }
-    .grid__offset-11--small {
-      margin-left: 91.66667%; } }
-  @media (min-width: 1180px) {
-    .grid__offset-1--large {
-      margin-left: 8.33333%; }
-    .grid__offset-2--large {
-      margin-left: 16.66667%; }
-    .grid__offset-3--large {
-      margin-left: 25%; }
-    .grid__offset-4--large {
-      margin-left: 33.33333%; }
-    .grid__offset-5--large {
-      margin-left: 41.66667%; }
-    .grid__offset-6--large {
-      margin-left: 50%; }
-    .grid__offset-7--large {
-      margin-left: 58.33333%; }
-    .grid__offset-8--large {
-      margin-left: 66.66667%; }
-    .grid__offset-9--large {
-      margin-left: 75%; }
-    .grid__offset-10--large {
-      margin-left: 83.33333%; }
-    .grid__offset-11--large {
-      margin-left: 91.66667%; } }
+  @media (min-width: 450px small) {
+    .grid__1--small {
+      width: 8.33333%; }
+    .grid__2--small {
+      width: 16.66667%; }
+    .grid__3--small {
+      width: 25%; }
+    .grid__4--small {
+      width: 33.33333%; }
+    .grid__5--small {
+      width: 41.66667%; }
+    .grid__6--small {
+      width: 50%; }
+    .grid__7--small {
+      width: 58.33333%; }
+    .grid__8--small {
+      width: 66.66667%; }
+    .grid__9--small {
+      width: 75%; }
+    .grid__10--small {
+      width: 83.33333%; }
+    .grid__11--small {
+      width: 91.66667%; }
+    .grid__12--small {
+      width: 100%; } }
+  @media (min-width: 1180px large) {
+    .grid__1--large {
+      width: 8.33333%; }
+    .grid__2--large {
+      width: 16.66667%; }
+    .grid__3--large {
+      width: 25%; }
+    .grid__4--large {
+      width: 33.33333%; }
+    .grid__5--large {
+      width: 41.66667%; }
+    .grid__6--large {
+      width: 50%; }
+    .grid__7--large {
+      width: 58.33333%; }
+    .grid__8--large {
+      width: 66.66667%; }
+    .grid__9--large {
+      width: 75%; }
+    .grid__10--large {
+      width: 83.33333%; }
+    .grid__11--large {
+      width: 91.66667%; }
+    .grid__12--large {
+      width: 100%; } }
 
 /*04-modules*/
 /* ---------------------------------------------------------------------
 Navigation Bar
 --------------------------------------------------------------------- */
-.nav__primary {
-  border-top: 1px solid;
-  border-bottom: 1px solid;
-  height: 38px;
-  border-color: #c1bfbf #fefefe; }
-
 .hero {
-  height: 200px;
+  height: 350px;
   background: #4f1c3c; }
+
+.wrapper {
+  padding: 0 80px;
+  background-color: green;
+  border: 1px solid red; }
+
+.navbar-link {
+  background-color: red;
+  height: 10px; }
+
+.footer {
+  height: 75px;
+  background: #4f1c3c;
+  margin-top: 20px; }
 
 /*05-states*/

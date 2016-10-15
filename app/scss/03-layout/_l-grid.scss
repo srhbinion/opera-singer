@@ -26,25 +26,18 @@ Grid
     clear: both;
   }
   
-  //root
-  @at-root {
-    [class^="grid__"]{
-      float: left;
-      padding: 0 (gutter-width/2);
-      margin: ($gutter/2) 0;
-      box-sizing: border-box;
-    }
-  }
-  
-  &--reverse > [class^="grid__"]{
-    float: right;
-  }
-  
   /*grid*/
   //quantity of columns
   @for $number from 1 through 12 {
     &__#{$number} {
       width: percentage($number/12);
+      border: 1px solid blue;
+    }
+  }
+  
+  @for $number from 1 through 11 {
+    &__offset-#{$number} {
+      margin-left: percentage($number/12);
     }
   }
   
@@ -55,23 +48,6 @@ Grid
       @for $number from 1 through 12 {
         &__#{$number}--#{$name} {
           width: percentage($number/12);
-          background-color: red;
-        }
-      }
-    }
-  }
-  
-  @for $number from 1 through 11 {
-    &__offset-#{$number} {
-      margin-left: percentage($number/12);
-    }
-  }
-
-  @each $name, $size in $breakpoints {
-    @media (min-width: $size){
-      @for $number from 1 through 11 {
-        &__offset-#{$number}--#{$name} {
-          margin-left:percentage($number/12);
         }
       }
     }
