@@ -148,8 +148,6 @@ a {
 
 /* Email Sign-up*/
 #mc_embed_signup {
-  background: #fab909;
-  width: 600px;
   clear: left;
   font-family: "PT Sans", sans-serif; }
 
@@ -291,6 +289,9 @@ Grid
 /* ---------------------------------------------------------------------
 Navigation Bar
 --------------------------------------------------------------------- */
+nav {
+  height: 20px; }
+
 .hero {
   height: 350px;
   background: #4f1c3c; }
@@ -301,8 +302,7 @@ Navigation Bar
   border: 1px solid red; }
 
 .navbar-link {
-  background-color: red;
-  height: 10px; }
+  background-color: red; }
 
 .footer {
   height: 75px;
