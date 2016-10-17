@@ -1,7 +1,12 @@
 /* ---------------------------------------------------------------------
-Fonts
+Navigation
 --------------------------------------------------------------------- */
 
-$base-font-family: "PT Sans", sans-serif;
-$base-heading-family: "Abril Fatface", cursive;
-$base-font-size: 14px;
+.navbar-link {
+    float: right;
+    
+    li {
+        margin: 10px 20px;
+        float: left;
+    }
+}

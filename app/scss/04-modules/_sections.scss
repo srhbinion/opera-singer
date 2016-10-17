@@ -1,12 +1,20 @@
 /* ---------------------------------------------------------------------
-Navigation Bar
+Sections
 --------------------------------------------------------------------- */
+
 nav {
-    height: 20px;
+    padding: $gutter;
 }
 
 body {
-    
+    font-family: "PT Sans", sans-serif;
+    color: $wine;
+}
+
+footer {
+    padding: $gutter;
+    background: $wine;
+    margin-top: $gutter;
 }
 
 .hero {
@@ -16,16 +24,5 @@ body {
 
 .wrapper {
   padding: 0 ($gutter*4);
-  background-color: green;
-  border: 1px solid red;
 }
 
-.navbar-link {
-    background-color: red;
-}
-
-.footer {
-    height: 75px;
-    background: $wine;
-    margin-top: $gutter;
-}

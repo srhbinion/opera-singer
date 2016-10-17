@@ -1,7 +1,11 @@
 /* ---------------------------------------------------------------------
-Fonts
+Size
 --------------------------------------------------------------------- */
 
-$base-font-family: "PT Sans", sans-serif;
-$base-heading-family: "Abril Fatface", cursive;
-$base-font-size: 14px;
+$gutter: 20px;
+
+$breakpoints: (
+  //min-width
+  small: 320px,
+  large: 768px
+);

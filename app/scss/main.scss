@@ -1,16 +1,21 @@
 /*00-helper*/
 @import "00-helper/01-variables/fonts";
+@import "00-helper/01-variables/colors";
+@import "00-helper/01-variables/sizes";
 @import "00-helper/04-resets/global";
 
 /*01-vendor*/
 
 /*02-base*/
 @import "02-base/headings";
+@import "02-base/navigation";
 
 /*03-layout*/
 @import "03-layout/l-grid";
+@import "03-layout/l-mediaq--small";
 
 /*04-modules*/
 @import "04-modules/sections";
+@import "04-modules/email-sections";
 
 /*05-states*/

@@ -2,18 +2,15 @@
 Grid
 --------------------------------------------------------------------- */
 .l--constrain {
-  position: relative;
   margin: 0 auto;
-  background-color: #d5d5d5;
   
   @media (max-width: map-get($breakpoints, large)) {
-    width: 465px;
-    height: 750px;
+    background-color: yellow;
   }
 }
 
 .grid {
-  margin: ($gutter/2);
+  display: inline-block;
 
   //clearfix
   &::after,
@@ -25,24 +22,22 @@ Grid
   &::after {
     clear: both;
   }
-  
-  /*grid*/
-  //quantity of columns
+
+  //columns
   @for $number from 1 through 12 {
     &__#{$number} {
       width: percentage($number/12);
-      border: 1px solid blue;
     }
   }
   
+  //offset
   @for $number from 1 through 11 {
     &__offset-#{$number} {
       margin-left: percentage($number/12);
     }
   }
   
-  /*media*/
-  //quantity of columns
+  //media queries
   @each $name, $size in $breakpoints {
     @media (min-width: $size$name) {
       @for $number from 1 through 12 {

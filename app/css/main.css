@@ -33,9 +33,6 @@ time, mark, audio, video {
   font-family: inherit;
   vertical-align: baseline; }
 
-body {
-  line-height: 1; }
-
 ol, ul {
   list-style: none; }
 
@@ -110,108 +107,68 @@ h1 {
   font-weight: 400;
   font-size: 1.25em; }
 
-h2 {
-  font-family: "PT Sans", sans-serif; }
-
-p {
-  font-family: "PT Sans", sans-serif;
-  clear: both; }
-
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: red; }
 
-/* xx */
-.singer-title {
-  font-size: 24px; }
+.text {
+  min-height: 150px;
+  margin: 20px;
+  float: left; }
 
-/* NavBar */
+.band {
+  background-color: #d5d5d5; }
+
+/* ---------------------------------------------------------------------
+Navigation
+--------------------------------------------------------------------- */
 .navbar-link {
-  text-align: right;
-  position: absolute;
-  right: 150px;
-  top: 25px; }
-
-.navbar-link li {
-  float: left;
-  padding: 15px;
-  margin: 15px;
-  list-style-type: none; }
-
-/* Bio */
-.singer-bio {
-  background: #fff;
-  color: #001a33; }
-
-/* Calendar */
-.calendar {
-  width: 600px; }
-
-/* Email Sign-up*/
-#mc_embed_signup {
-  clear: left;
-  font-family: "PT Sans", sans-serif; }
-
-@-ms-viewport {
-  width: device-width; }
+  float: right; }
+  .navbar-link li {
+    margin: 10px 20px;
+    float: left; }
 
 /*03-layout*/
 /* ---------------------------------------------------------------------
 Grid
 --------------------------------------------------------------------- */
 .l--constrain {
-  position: relative;
-  margin: 0 auto;
-  background-color: #d5d5d5; }
-  @media (max-width: 1180px) {
+  margin: 0 auto; }
+  @media (max-width: 768px) {
     .l--constrain {
-      width: 465px;
-      height: 750px; } }
+      background-color: yellow; } }
 
 .grid {
-  margin: 10px;
-  /*grid*/
-  /*media*/ }
+  display: inline-block; }
   .grid::after, .grid::before {
     display: table;
     content: ""; }
   .grid::after {
     clear: both; }
   .grid__1 {
-    width: 8.33333%;
-    border: 1px solid blue; }
+    width: 8.33333%; }
   .grid__2 {
-    width: 16.66667%;
-    border: 1px solid blue; }
+    width: 16.66667%; }
   .grid__3 {
-    width: 25%;
-    border: 1px solid blue; }
+    width: 25%; }
   .grid__4 {
-    width: 33.33333%;
-    border: 1px solid blue; }
+    width: 33.33333%; }
   .grid__5 {
-    width: 41.66667%;
-    border: 1px solid blue; }
+    width: 41.66667%; }
   .grid__6 {
-    width: 50%;
-    border: 1px solid blue; }
+    width: 50%; }
   .grid__7 {
-    width: 58.33333%;
-    border: 1px solid blue; }
+    width: 58.33333%; }
   .grid__8 {
-    width: 66.66667%;
-    border: 1px solid blue; }
+    width: 66.66667%; }
   .grid__9 {
-    width: 75%;
-    border: 1px solid blue; }
+    width: 75%; }
   .grid__10 {
-    width: 83.33333%;
-    border: 1px solid blue; }
+    width: 83.33333%; }
   .grid__11 {
-    width: 91.66667%;
-    border: 1px solid blue; }
+    width: 91.66667%; }
   .grid__12 {
-    width: 100%;
-    border: 1px solid blue; }
+    width: 100%; }
   .grid__offset-1 {
     margin-left: 8.33333%; }
   .grid__offset-2 {
@@ -234,7 +191,7 @@ Grid
     margin-left: 83.33333%; }
   .grid__offset-11 {
     margin-left: 91.66667%; }
-  @media (min-width: 450px small) {
+  @media (min-width: 320px small) {
     .grid__1--small {
       width: 8.33333%; }
     .grid__2--small {
@@ -259,7 +216,7 @@ Grid
       width: 91.66667%; }
     .grid__12--small {
       width: 100%; } }
-  @media (min-width: 1180px large) {
+  @media (min-width: 768px large) {
     .grid__1--large {
       width: 8.33333%; }
     .grid__2--large {
@@ -285,28 +242,40 @@ Grid
     .grid__12--large {
       width: 100%; } }
 
-/*04-modules*/
 /* ---------------------------------------------------------------------
 Navigation Bar
 --------------------------------------------------------------------- */
+@-ms-viewport {
+  width: device-width; }
+
+/*04-modules*/
+/* ---------------------------------------------------------------------
+Sections
+--------------------------------------------------------------------- */
 nav {
-  height: 20px; }
+  padding: 20px; }
+
+body {
+  font-family: "PT Sans", sans-serif;
+  color: #4f1c3c; }
+
+footer {
+  padding: 20px;
+  background: #4f1c3c;
+  margin-top: 20px; }
 
 .hero {
   height: 350px;
   background: #4f1c3c; }
 
 .wrapper {
-  padding: 0 80px;
-  background-color: green;
-  border: 1px solid red; }
+  padding: 0 80px; }
 
-.navbar-link {
-  background-color: red; }
-
-.footer {
-  height: 75px;
-  background: #4f1c3c;
-  margin-top: 20px; }
+/* ---------------------------------------------------------------------
+Email Sign-up
+--------------------------------------------------------------------- */
+#mc_embed_signup {
+  clear: left;
+  font-family: "PT Sans", sans-serif; }
 
 /*05-states*/
