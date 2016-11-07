@@ -3,30 +3,31 @@
 --------------------------------------------------------------------- */
 
 h1 {
-    font-family: "Abril Fatface", cursive;
+    font-family: $base-heading-family, cursive;
     font-style: normal;
     font-weight: 400;
-    font-size: 1.25em;
+    font-size: 2em;
 }
 
 h2 {
+    font-size: 1.375rem;
+    font-weight: 300;
+}
+
+h3 {
+    font-size: 1.125rem;
+    font-weight: 300;
 }
 
 p {
-    
+    font-family: $base-font-family, sans-serif;
+    color: $charcoal;
+    line-height: 1.5em;
+    font-weight: 200;
+    line-height: 1.8em;
 }
 
 a { 
     text-decoration: none;
-    color: red;
-}
-
-.text {
-    min-height: 150px;
-    margin: 20px;
-    float: left;
-}
-
-.band {
-    background-color: #d5d5d5;
+    color: $heather;
 }

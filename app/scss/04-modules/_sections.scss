@@ -2,19 +2,38 @@
 Sections
 --------------------------------------------------------------------- */
 
-nav {
-    padding: $gutter;
-}
-
+html,
 body {
-    font-family: "PT Sans", sans-serif;
-    color: $wine;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  top: 0;
+  font-size: 100%;
+  font-family: $base-font-family, sans-serif;
+  color: $charcoal;
+  line-height: 1.5;
 }
 
-footer {
-    padding: $gutter;
-    background: $wine;
-    margin-top: $gutter;
+nav {
+  padding: $gutter;
+}
+
+.footer {
+  position: absolute;
+  height: 35px;
+  padding: 5px 25px;
+  width: 100%;
+  bottom: 0px;
+  left: 0px;
+  margin-top: $gutter;
+  background-color: $wine;
+}
+
+.wrapper {
+    padding: 0 ($gutter*4);
 }
 
 .hero {
@@ -22,7 +41,14 @@ footer {
     background: $wine;
 }
 
-.wrapper {
-  padding: 0 ($gutter*4);
+.text {
+    min-height: 150px;
+    margin: 20px;
+    float: left;
+    background-color: #f00;
+    align: top;
 }
 
+.band {
+    background-color: $dusty;
+}
