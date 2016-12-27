@@ -4,14 +4,15 @@
 
 h1 {
     font-family: $base-heading-family, cursive;
+    font-size: 3rem;
     font-style: normal;
     font-weight: 400;
-    font-size: 2em;
 }
 
 h2 {
+    font-family: $base-heading-family, cursive;
     font-size: 1.375rem;
-    font-weight: 300;
+    font-weight: 600;
 }
 
 h3 {
@@ -21,13 +22,11 @@ h3 {
 
 p {
     font-family: $base-font-family, sans-serif;
-    color: $charcoal;
-    line-height: 1.5em;
+    font-size: 1rem;
     font-weight: 200;
-    line-height: 1.8em;
+    line-height: 1.8rem;
 }
 
 a { 
     text-decoration: none;
-    color: $heather;
 }

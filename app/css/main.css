@@ -103,13 +103,14 @@ textarea {
 --------------------------------------------------------------------- */
 h1 {
   font-family: "Abril Fatface", cursive, cursive;
+  font-size: 3rem;
   font-style: normal;
-  font-weight: 400;
-  font-size: 2em; }
+  font-weight: 400; }
 
 h2 {
+  font-family: "Abril Fatface", cursive, cursive;
   font-size: 1.375rem;
-  font-weight: 300; }
+  font-weight: 600; }
 
 h3 {
   font-size: 1.125rem;
@@ -117,14 +118,12 @@ h3 {
 
 p {
   font-family: "PT Sans", sans-serif, sans-serif;
-  color: #36454F;
-  line-height: 1.5em;
+  font-size: 1rem;
   font-weight: 200;
-  line-height: 1.8em; }
+  line-height: 1.8rem; }
 
 a {
-  text-decoration: none;
-  color: #a3919f; }
+  text-decoration: none; }
 
 /* ---------------------------------------------------------------------
 Navigation
@@ -132,22 +131,16 @@ Navigation
 .navbar-link {
   float: right; }
   .navbar-link li {
-    margin: 10px 20px;
+    margin: 0 20px;
     float: left; }
 
 /*03-layout*/
 /* ---------------------------------------------------------------------
 Grid
 --------------------------------------------------------------------- */
-.l--constrain {
-  margin: 0 auto; }
-  @media (max-width: 768px) {
-    .l--constrain {
-      background-color: #f00; } }
-
 .grid {
-  margin: 0 0 20px 0;
-  position: relative; }
+  box-sizing: border-box;
+  border: 1px solid red; }
   .grid::after {
     display: table;
     content: "";
@@ -155,134 +148,149 @@ Grid
   .grid__1 {
     width: 8.33333%;
     float: left;
-    box-sizing: border-box; }
+    padding: 20px; }
   .grid__2 {
     width: 16.66667%;
     float: left;
-    box-sizing: border-box; }
+    padding: 20px; }
   .grid__3 {
     width: 25%;
     float: left;
-    box-sizing: border-box; }
+    padding: 20px; }
   .grid__4 {
     width: 33.33333%;
     float: left;
-    box-sizing: border-box; }
+    padding: 20px; }
   .grid__5 {
     width: 41.66667%;
     float: left;
-    box-sizing: border-box; }
+    padding: 20px; }
   .grid__6 {
     width: 50%;
     float: left;
-    box-sizing: border-box; }
+    padding: 20px; }
   .grid__7 {
     width: 58.33333%;
     float: left;
-    box-sizing: border-box; }
+    padding: 20px; }
   .grid__8 {
     width: 66.66667%;
     float: left;
-    box-sizing: border-box; }
+    padding: 20px; }
   .grid__9 {
     width: 75%;
     float: left;
-    box-sizing: border-box; }
+    padding: 20px; }
   .grid__10 {
     width: 83.33333%;
     float: left;
-    box-sizing: border-box; }
+    padding: 20px; }
   .grid__11 {
     width: 91.66667%;
     float: left;
-    box-sizing: border-box; }
+    padding: 20px; }
   .grid__12 {
     width: 100%;
     float: left;
-    box-sizing: border-box; }
-  .grid__offset-1 {
-    margin-left: 8.33333%;
-    background-color: #ff0; }
-  .grid__offset-2 {
-    margin-left: 16.66667%;
-    background-color: #ff0; }
-  .grid__offset-3 {
-    margin-left: 25%;
-    background-color: #ff0; }
-  .grid__offset-4 {
-    margin-left: 33.33333%;
-    background-color: #ff0; }
-  .grid__offset-5 {
-    margin-left: 41.66667%;
-    background-color: #ff0; }
-  .grid__offset-6 {
-    margin-left: 50%;
-    background-color: #ff0; }
-  .grid__offset-7 {
-    margin-left: 58.33333%;
-    background-color: #ff0; }
-  .grid__offset-8 {
-    margin-left: 66.66667%;
-    background-color: #ff0; }
-  .grid__offset-9 {
-    margin-left: 75%;
-    background-color: #ff0; }
-  .grid__offset-10 {
-    margin-left: 83.33333%;
-    background-color: #ff0; }
-  .grid__offset-11 {
-    margin-left: 91.66667%;
-    background-color: #ff0; }
+    padding: 20px; }
   @media (min-width: 320px small) {
     .grid__1--small {
-      width: 8.33333%; }
+      width: 8.33333%;
+      float: left;
+      padding: 20px; }
     .grid__2--small {
-      width: 16.66667%; }
+      width: 16.66667%;
+      float: left;
+      padding: 20px; }
     .grid__3--small {
-      width: 25%; }
+      width: 25%;
+      float: left;
+      padding: 20px; }
     .grid__4--small {
-      width: 33.33333%; }
+      width: 33.33333%;
+      float: left;
+      padding: 20px; }
     .grid__5--small {
-      width: 41.66667%; }
+      width: 41.66667%;
+      float: left;
+      padding: 20px; }
     .grid__6--small {
-      width: 50%; }
+      width: 50%;
+      float: left;
+      padding: 20px; }
     .grid__7--small {
-      width: 58.33333%; }
+      width: 58.33333%;
+      float: left;
+      padding: 20px; }
     .grid__8--small {
-      width: 66.66667%; }
+      width: 66.66667%;
+      float: left;
+      padding: 20px; }
     .grid__9--small {
-      width: 75%; }
+      width: 75%;
+      float: left;
+      padding: 20px; }
     .grid__10--small {
-      width: 83.33333%; }
+      width: 83.33333%;
+      float: left;
+      padding: 20px; }
     .grid__11--small {
-      width: 91.66667%; }
+      width: 91.66667%;
+      float: left;
+      padding: 20px; }
     .grid__12--small {
-      width: 100%; } }
-  @media (min-width: 768px large) {
+      width: 100%;
+      float: left;
+      padding: 20px; } }
+  @media (min-width: 920px large) {
     .grid__1--large {
-      width: 8.33333%; }
+      width: 8.33333%;
+      float: left;
+      padding: 20px; }
     .grid__2--large {
-      width: 16.66667%; }
+      width: 16.66667%;
+      float: left;
+      padding: 20px; }
     .grid__3--large {
-      width: 25%; }
+      width: 25%;
+      float: left;
+      padding: 20px; }
     .grid__4--large {
-      width: 33.33333%; }
+      width: 33.33333%;
+      float: left;
+      padding: 20px; }
     .grid__5--large {
-      width: 41.66667%; }
+      width: 41.66667%;
+      float: left;
+      padding: 20px; }
     .grid__6--large {
-      width: 50%; }
+      width: 50%;
+      float: left;
+      padding: 20px; }
     .grid__7--large {
-      width: 58.33333%; }
+      width: 58.33333%;
+      float: left;
+      padding: 20px; }
     .grid__8--large {
-      width: 66.66667%; }
+      width: 66.66667%;
+      float: left;
+      padding: 20px; }
     .grid__9--large {
-      width: 75%; }
+      width: 75%;
+      float: left;
+      padding: 20px; }
     .grid__10--large {
-      width: 83.33333%; }
+      width: 83.33333%;
+      float: left;
+      padding: 20px; }
     .grid__11--large {
-      width: 91.66667%; }
+      width: 91.66667%;
+      float: left;
+      padding: 20px; }
     .grid__12--large {
-      width: 100%; } }
+      width: 100%;
+      float: left;
+      padding: 20px; } }
 
 /* ---------------------------------------------------------------------
 Navigation Bar
@@ -296,47 +304,24 @@ Sections
 --------------------------------------------------------------------- */
 html,
 body {
-  position: relative;
-  height: 100%;
-  width: 100%;
   margin: 0;
   padding: 0;
-  left: 0;
-  top: 0;
-  font-size: 100%;
   font-family: "PT Sans", sans-serif, sans-serif;
-  color: #36454F;
-  line-height: 1.5; }
+  color: #36454F; }
 
 nav {
   padding: 20px; }
 
-.footer {
-  position: absolute;
-  height: 35px;
-  padding: 5px 25px;
-  width: 100%;
-  bottom: 0px;
-  left: 0px;
-  margin-top: 20px;
-  background-color: #4f1c3c; }
-
-.wrapper {
-  padding: 0 80px; }
+section {
+  padding-bottom: 80px;
+  background-color: yellow; }
 
 .hero {
   height: 350px;
   background: #4f1c3c; }
 
-.text {
-  min-height: 150px;
-  margin: 20px;
-  float: left;
-  background-color: #f00;
-  align: top; }
-
-.band {
-  background-color: #d7d0c6; }
+.footer {
+  background-color: #4f1c3c; }
 
 /* ---------------------------------------------------------------------
 Email Sign-up

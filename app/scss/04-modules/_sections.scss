@@ -4,51 +4,26 @@ Sections
 
 html,
 body {
-  position: relative;
-  height: 100%;
-  width: 100%;
   margin: 0;
   padding: 0;
-  left: 0;
-  top: 0;
-  font-size: 100%;
   font-family: $base-font-family, sans-serif;
   color: $charcoal;
-  line-height: 1.5;
 }
 
 nav {
   padding: $gutter;
 }
 
-.footer {
-  position: absolute;
-  height: 35px;
-  padding: 5px 25px;
-  width: 100%;
-  bottom: 0px;
-  left: 0px;
-  margin-top: $gutter;
-  background-color: $wine;
-}
-
-.wrapper {
-    padding: 0 ($gutter*4);
+section {
+  padding-bottom: $gutter*4;
+  background-color: yellow;
 }
 
 .hero {
-    height: 350px;
-    background: $wine;
+  height: 350px;
+  background: $wine;
 }
 
-.text {
-    min-height: 150px;
-    margin: 20px;
-    float: left;
-    background-color: #f00;
-    align: top;
-}
-
-.band {
-    background-color: $dusty;
+.footer {
+  background-color: $wine;
 }
