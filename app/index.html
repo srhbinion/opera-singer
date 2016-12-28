@@ -24,8 +24,10 @@
             </div>
             <nav class="grid grid__6">
                 <ul class="navbar-link">
-                    <li><a href="#"><p>about</p></a></li>
-                    <li><a href="#"><p>gallery</p></a></li>
+                    <li><a href="#"><p>About</p></a></li>
+                    <li><a href="#"><p>Contact</p></a></li>
+                    <li><a href="#"><p>Calendar</p></a></li>
+                    <!--<li><a href="#"><p>Gallery</p></a></li>-->
                 </ul>
             </nav>
         </header>
@@ -48,9 +50,11 @@
         </section>
         <!--Begin MailChimp Signup Form -->
         <section class="grid">
-            <legend>
-                <h2>Mailing List</h2>
-            </legend>
+            <div class="grid__12">
+                <legend>
+                    <h2>Mailing List</h2>
+                </legend>
+            </div>
             <div id="mc_embed_signup">
                 <form action="//about.us9.list-manage.com/subscribe/post?u=1fe6ec52f1d714ac7a02b1fb1&amp;id=a21b19ecef"
                       method="post" 
@@ -60,25 +64,41 @@
                       target="_blank" 
                       novalidate>
                     <fieldset id="mc_embed_signup_scroll">
-                        <div>
-
-                            <div class="indicates-required">
-                                <p><span class="asterisk">*</span> indicates required</p>
-                            </div>
-                        </div>
-                        <ul>
-                            <li class="mc-field-group">
-                                <div class="grid grid__12">
-                                    <label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label>
-                                    <input type="email"
-                                           value="" 
-                                           name="EMAIL" 
-                                           class="required email" 
-                                           id="mce-EMAIL">
+                        <ul class="mc-field-group input-group">
+                            <li class="grid__2">
+                                <strong>Email Format</strong>
+                            </li>
+                            <li class="grid__2">
+                                <label for="mce-EMAILTYPE-0">html</label>
+                                <input type="radio" 
+                                       value="html" 
+                                       name="EMAILTYPE" 
+                                       id="mce-EMAILTYPE-0">
+                            </li>
+                            <li class="grid__2">
+                                <label for="mce-EMAILTYPE-1">text</label>
+                                <input type="radio" 
+                                       value="text" 
+                                       name="EMAILTYPE" 
+                                       id="mce-EMAILTYPE-1">
+                            </li>
+                            <li class="grid__3">
+                                <div class="indicates-required">
+                                    <p><span class="asterisk">*</span> indicates required</p>
                                 </div>
                             </li>
+                        </ul>
+                        <ul>
                             <li class="mc-field-group">
-                                <div class="grid grid__5">
+                                <label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label>
+                                <input type="email"
+                                       value="" 
+                                       name="EMAIL" 
+                                       class="required email" 
+                                       id="mce-EMAIL">
+                            </li>
+                            <li class="mc-field-group">
+                                <div class="grid grid__6">
                                     <label for="mce-FNAME">First Name </label>
                                     <input type="text" 
                                            value="" 
@@ -86,7 +106,7 @@
                                            class=""
                                            id="mce-FNAME">
                                 </div>
-                                <div class="grid grid__offset-1 grid__6">
+                                <div class="grid grid__6">
                                     <label for="mce-LNAME">Last Name </label>
                                     <input type="text"
                                            value="" 
@@ -94,27 +114,6 @@
                                            class="" 
                                            id="mce-LNAME">
                                 <div>
-                            </li>
-                            <li>
-                                <ul class="mc-field-group input-group">
-                                    <li class="grid grid__5">
-                                        <strong>Email Format</strong>
-                                    </li>
-                                    <li class="grid grid__3">
-                                        <label for="mce-EMAILTYPE-0">html</label>
-                                        <input type="radio" 
-                                               value="html" 
-                                               name="EMAILTYPE" 
-                                               id="mce-EMAILTYPE-0">
-                                    </li>
-                                    <li class="grid grid__2">
-                                        <label for="mce-EMAILTYPE-1">text</label>
-                                        <input type="radio" 
-                                               value="text" 
-                                               name="EMAILTYPE" 
-                                               id="mce-EMAILTYPE-1">
-                                    </li>
-                                </ul>
                             </li>
                             <li>
                                 <div id="mce-responses" class="clear">
@@ -148,25 +147,28 @@
         </section>
         <!--Calendar-->
         <section class="grid">
-            <legend>
-                <h2>Calendar</h2>
-            </legend>
-            <div>
-                <iframe src="https://calendar.google.com/calendar/embed?showPrint=0&amp;height=600&amp;wkst=1&amp;hl=en&amp;bgcolor=%23ffffff&amp;src=am2opasoltujem9nt71beh9t5o%40group.calendar.google.com&amp;color=%23691426&amp;ctz=America%2FChicago" 
-                        width="100%"
-                        height="550" 
-                        frameborder="0" 
-                        scrolling="no"
-                        min-width="320">
-                </iframe>
+            <div class="grid__12">
+                <legend>
+                    <h2>Calendar</h2>
+                </legend>
+                <div>
+                    <iframe src="https://calendar.google.com/calendar/embed?showPrint=0&amp;height=600&amp;wkst=1&amp;hl=en&amp;bgcolor=%23ffffff&amp;src=am2opasoltujem9nt71beh9t5o%40group.calendar.google.com&amp;color=%23691426&amp;ctz=America%2FChicago" 
+                            width="100%"
+                            height="550" 
+                            frameborder="0" 
+                            scrolling="no"
+                            min-width="320">
+                    </iframe>
+                </div>
             <div>
         </section>
-        <!--Gallery-->
+        <!--Gallery
         <section class="grid">
             <legend>
                 <h2>Gallery</h2>
             </legend>
         </section>
+        -->
         <footer class="footer">
             <p>Amanda</p>
         </footer>
