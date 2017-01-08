@@ -19,6 +19,7 @@ Grid
       width: percentage($number/12);
       float: left;
       padding: $gutter;
+      border: 1px solid red;
     }
   }
 

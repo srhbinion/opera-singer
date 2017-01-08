@@ -128,11 +128,28 @@ a {
 /* ---------------------------------------------------------------------
 Navigation
 --------------------------------------------------------------------- */
-.navbar-link {
-  float: right; }
-  .navbar-link li {
-    margin: 0 20px;
-    float: left; }
+.navbar {
+  float: right;
+  width: 100%; }
+
+.navbar__item {
+  margin: 5px 20px;
+  padding: 12px 24px;
+  background: #36454F; }
+
+.navbar__item a {
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center; }
+
+.socialBar-item {
+  float: right;
+  margin: 0 10px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #36454F;
+  border-radius: 50%; }
 
 /*03-layout*/
 /* ---------------------------------------------------------------------
@@ -147,51 +164,63 @@ Grid
   .grid__1 {
     width: 8.33333%;
     float: left;
-    padding: 20px; }
+    padding: 20px;
+    border: 1px solid red; }
   .grid__2 {
     width: 16.66667%;
     float: left;
-    padding: 20px; }
+    padding: 20px;
+    border: 1px solid red; }
   .grid__3 {
     width: 25%;
     float: left;
-    padding: 20px; }
+    padding: 20px;
+    border: 1px solid red; }
   .grid__4 {
     width: 33.33333%;
     float: left;
-    padding: 20px; }
+    padding: 20px;
+    border: 1px solid red; }
   .grid__5 {
     width: 41.66667%;
     float: left;
-    padding: 20px; }
+    padding: 20px;
+    border: 1px solid red; }
   .grid__6 {
     width: 50%;
     float: left;
-    padding: 20px; }
+    padding: 20px;
+    border: 1px solid red; }
   .grid__7 {
     width: 58.33333%;
     float: left;
-    padding: 20px; }
+    padding: 20px;
+    border: 1px solid red; }
   .grid__8 {
     width: 66.66667%;
     float: left;
-    padding: 20px; }
+    padding: 20px;
+    border: 1px solid red; }
   .grid__9 {
     width: 75%;
     float: left;
-    padding: 20px; }
+    padding: 20px;
+    border: 1px solid red; }
   .grid__10 {
     width: 83.33333%;
     float: left;
-    padding: 20px; }
+    padding: 20px;
+    border: 1px solid red; }
   .grid__11 {
     width: 91.66667%;
     float: left;
-    padding: 20px; }
+    padding: 20px;
+    border: 1px solid red; }
   .grid__12 {
     width: 100%;
     float: left;
-    padding: 20px; }
+    padding: 20px;
+    border: 1px solid red; }
   @media (min-width: 320px small) {
     .grid__1--small {
       width: 8.33333%;
@@ -296,6 +325,30 @@ Navigation Bar
 --------------------------------------------------------------------- */
 @-ms-viewport {
   width: device-width; }
+
+.columns--2 {
+  -moz-column-count: 2;
+  /* Firefox */
+  -webkit-column-count: 2;
+  /* Safari and Chrome */
+  column-count: 2;
+  -webkit-column-gap: 3rem;
+  /* Chrome, Safari, Opera */
+  -moz-column-gap: 3rem;
+  /* Firefox */
+  column-gap: 3rem; }
+
+.columns--3 {
+  -moz-column-count: 3;
+  /* Firefox */
+  -webkit-column-count: 3;
+  /* Safari and Chrome */
+  column-count: 3;
+  -webkit-column-gap: 3rem;
+  /* Chrome, Safari, Opera */
+  -moz-column-gap: 3rem;
+  /* Firefox */
+  column-gap: 3rem; }
 
 /*04-modules*/
 /* ---------------------------------------------------------------------

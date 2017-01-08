@@ -2,11 +2,33 @@
 Navigation
 --------------------------------------------------------------------- */
 
-.navbar-link {
+.navbar {
     float: right;
-    
-    li {
-        margin: 0 20px;
-        float: left;
-    }
+    width: 100%;
+}
+
+.navbar__item {
+    margin: 5px 20px;
+    padding: 12px 24px;;
+    background: $charcoal;
+}
+
+.navbar__item a {
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.socialBar {
+
+}
+
+.socialBar-item {
+    float: right;
+    margin: 0 10px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid $charcoal;
+    border-radius: 50%; 
 }
