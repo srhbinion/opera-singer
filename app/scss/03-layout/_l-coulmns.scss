@@ -1,3 +1,7 @@
+/* ---------------------------------------------------------------------
+Columns
+--------------------------------------------------------------------- */
+
 .columns__2 {
   -moz-column-count: 2; /* Firefox */
   -webkit-column-count: 2; /* Safari and Chrome */
@@ -5,13 +9,22 @@
   -webkit-column-gap: 2rem; /* Chrome, Safari, Opera */
   -moz-column-gap: 2rem; /* Firefox */
   column-gap: 2rem;
-}
 
-.columns__3 {
-  -moz-column-count: 3; /* Firefox */
-  -webkit-column-count: 3; /* Safari and Chrome */
-  column-count: 3;
-  -webkit-column-gap: 2.5rem; /* Chrome, Safari, Opera */
-  -moz-column-gap: 2.5rem; /* Firefox */
-  column-gap: 2.5rem;
+  @media (max-width: map-get($breakpoints, medium)) {
+    -moz-column-count: 1; /* Firefox */
+    -webkit-column-count: 1; /* Safari and Chrome */
+    column-count: 1;
+    -webkit-column-gap: 0; /* Chrome, Safari, Opera */
+    -moz-column-gap: 0; /* Firefox */
+    column-gap: 0;
+  }
+
+  @media (min-width: map-get($breakpoints, large)) {
+    -moz-column-count: 3; /* Firefox */
+    -webkit-column-count: 3; /* Safari and Chrome */
+    column-count: 3;
+    -webkit-column-gap: 2.5rem; /* Chrome, Safari, Opera */
+    -moz-column-gap: 2.5rem; /* Firefox */
+    column-gap: 2.5rem;
+  }
 }

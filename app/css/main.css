@@ -110,10 +110,11 @@ h1 {
 
 h2 {
   font-family: "Yesteryear", cursive;
-  font-size: 4.5rem;
+  font-size: 5.2rem;
   font-weight: 600; }
 
 h3 {
+  color: #4f1c3c;
   font-size: 1.5rem;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -143,155 +144,147 @@ Grid
     width: 8.33333%;
     float: left;
     padding: 20px; }
+  @media (max-width: 670px) {
+    .grid {
+      width: 100%;
+      float: left;
+      padding: 20px;
+      margin: auto 0; } }
   .grid__2 {
     width: 16.66667%;
     float: left;
     padding: 20px; }
+  @media (max-width: 670px) {
+    .grid {
+      width: 100%;
+      float: left;
+      padding: 20px;
+      margin: auto 0; } }
   .grid__3 {
     width: 25%;
     float: left;
     padding: 20px; }
+  @media (max-width: 670px) {
+    .grid {
+      width: 100%;
+      float: left;
+      padding: 20px;
+      margin: auto 0; } }
   .grid__4 {
     width: 33.33333%;
     float: left;
     padding: 20px; }
+  @media (max-width: 670px) {
+    .grid {
+      width: 100%;
+      float: left;
+      padding: 20px;
+      margin: auto 0; } }
   .grid__5 {
     width: 41.66667%;
     float: left;
     padding: 20px; }
+  @media (max-width: 670px) {
+    .grid {
+      width: 100%;
+      float: left;
+      padding: 20px;
+      margin: auto 0; } }
   .grid__6 {
     width: 50%;
     float: left;
     padding: 20px; }
+  @media (max-width: 670px) {
+    .grid {
+      width: 100%;
+      float: left;
+      padding: 20px;
+      margin: auto 0; } }
   .grid__7 {
     width: 58.33333%;
     float: left;
     padding: 20px; }
+  @media (max-width: 670px) {
+    .grid {
+      width: 100%;
+      float: left;
+      padding: 20px;
+      margin: auto 0; } }
   .grid__8 {
     width: 66.66667%;
     float: left;
     padding: 20px; }
+  @media (max-width: 670px) {
+    .grid {
+      width: 100%;
+      float: left;
+      padding: 20px;
+      margin: auto 0; } }
   .grid__9 {
     width: 75%;
     float: left;
     padding: 20px; }
+  @media (max-width: 670px) {
+    .grid {
+      width: 100%;
+      float: left;
+      padding: 20px;
+      margin: auto 0; } }
   .grid__10 {
     width: 83.33333%;
     float: left;
     padding: 20px; }
+  @media (max-width: 670px) {
+    .grid {
+      width: 100%;
+      float: left;
+      padding: 20px;
+      margin: auto 0; } }
   .grid__11 {
     width: 91.66667%;
     float: left;
     padding: 20px; }
+  @media (max-width: 670px) {
+    .grid {
+      width: 100%;
+      float: left;
+      padding: 20px;
+      margin: auto 0; } }
   .grid__12 {
     width: 100%;
     float: left;
     padding: 20px; }
-  @media (min-width: 670px medium) {
-    .grid__1--medium {
-      width: 8.33333%;
-      float: left;
-      padding: 20px; }
-    .grid__2--medium {
-      width: 16.66667%;
-      float: left;
-      padding: 20px; }
-    .grid__3--medium {
-      width: 25%;
-      float: left;
-      padding: 20px; }
-    .grid__4--medium {
-      width: 33.33333%;
-      float: left;
-      padding: 20px; }
-    .grid__5--medium {
-      width: 41.66667%;
-      float: left;
-      padding: 20px; }
-    .grid__6--medium {
-      width: 50%;
-      float: left;
-      padding: 20px; }
-    .grid__7--medium {
-      width: 58.33333%;
-      float: left;
-      padding: 20px; }
-    .grid__8--medium {
-      width: 66.66667%;
-      float: left;
-      padding: 20px; }
-    .grid__9--medium {
-      width: 75%;
-      float: left;
-      padding: 20px; }
-    .grid__10--medium {
-      width: 83.33333%;
-      float: left;
-      padding: 20px; }
-    .grid__11--medium {
-      width: 91.66667%;
-      float: left;
-      padding: 20px; }
-    .grid__12--medium {
+  @media (max-width: 670px) {
+    .grid {
       width: 100%;
       float: left;
-      padding: 20px; } }
-  @media (min-width: 1250px large) {
-    .grid__1--large {
-      width: 8.33333%;
-      float: left;
-      padding: 20px; }
-    .grid__2--large {
-      width: 16.66667%;
-      float: left;
-      padding: 20px; }
-    .grid__3--large {
-      width: 25%;
-      float: left;
-      padding: 20px; }
-    .grid__4--large {
-      width: 33.33333%;
-      float: left;
-      padding: 20px; }
-    .grid__5--large {
-      width: 41.66667%;
-      float: left;
-      padding: 20px; }
-    .grid__6--large {
-      width: 50%;
-      float: left;
-      padding: 20px; }
-    .grid__7--large {
-      width: 58.33333%;
-      float: left;
-      padding: 20px; }
-    .grid__8--large {
-      width: 66.66667%;
-      float: left;
-      padding: 20px; }
-    .grid__9--large {
-      width: 75%;
-      float: left;
-      padding: 20px; }
-    .grid__10--large {
-      width: 83.33333%;
-      float: left;
-      padding: 20px; }
-    .grid__11--large {
-      width: 91.66667%;
-      float: left;
-      padding: 20px; }
-    .grid__12--large {
-      width: 100%;
-      float: left;
-      padding: 20px; } }
+      padding: 20px;
+      margin: auto 0; } }
 
 /* ---------------------------------------------------------------------
-Navigation Bar
+Media
 --------------------------------------------------------------------- */
-@-ms-viewport {
-  width: device-width; }
+.gallery {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row; }
+  @media (max-width: 670px) {
+    .gallery {
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-direction: column;
+      flex-direction: column; } }
 
+.gallery li {
+  flex: 2; }
+  @media (max-width: 670px) {
+    .gallery li {
+      padding-bottom: 40px; } }
+
+/* ---------------------------------------------------------------------
+Columns
+--------------------------------------------------------------------- */
 .columns__2 {
   -moz-column-count: 2;
   /* Firefox */
@@ -303,18 +296,30 @@ Navigation Bar
   -moz-column-gap: 2rem;
   /* Firefox */
   column-gap: 2rem; }
-
-.columns__3 {
-  -moz-column-count: 3;
-  /* Firefox */
-  -webkit-column-count: 3;
-  /* Safari and Chrome */
-  column-count: 3;
-  -webkit-column-gap: 2.5rem;
-  /* Chrome, Safari, Opera */
-  -moz-column-gap: 2.5rem;
-  /* Firefox */
-  column-gap: 2.5rem; }
+  @media (max-width: 670px) {
+    .columns__2 {
+      -moz-column-count: 1;
+      /* Firefox */
+      -webkit-column-count: 1;
+      /* Safari and Chrome */
+      column-count: 1;
+      -webkit-column-gap: 0;
+      /* Chrome, Safari, Opera */
+      -moz-column-gap: 0;
+      /* Firefox */
+      column-gap: 0; } }
+  @media (min-width: 1250px) {
+    .columns__2 {
+      -moz-column-count: 3;
+      /* Firefox */
+      -webkit-column-count: 3;
+      /* Safari and Chrome */
+      column-count: 3;
+      -webkit-column-gap: 2.5rem;
+      /* Chrome, Safari, Opera */
+      -moz-column-gap: 2.5rem;
+      /* Firefox */
+      column-gap: 2.5rem; } }
 
 /*04-modules*/
 /* ---------------------------------------------------------------------
@@ -348,7 +353,7 @@ nav {
   padding: 20px; }
 
 section {
-  padding: 0 10% 20px 10%; }
+  padding: 5% 10% 5% 10%; }
 
 .button {
   background-color: #4f1c3c;
@@ -358,6 +363,21 @@ section {
 .hero {
   margin-top: -25%;
   margin-right: 2%; }
+  @media (min-width: 1250px) {
+    .hero {
+      font-size: 13rem;
+      margin-right: 10%; } }
+  @media (max-width: 670px) {
+    .hero {
+      margin: 10%;
+      margin-right: 10%;
+      font-size: 5rem;
+      float: right; } }
+  @media (max-width: 500px) {
+    .hero {
+      margin: 10%;
+      font-size: 3.2rem;
+      float: left; } }
 
 .section__caption {
   margin-top: -15px;
@@ -366,24 +386,16 @@ section {
 .section__caption--inverse {
   color: #4f1c3c; }
 
+.mailing-list {
+  background-color: #a3919f;
+  padding-top: 5%;
+  padding-bottom: 8%;
+  margin-top: 5%; }
+
 .footer {
   background-color: #4f1c3c;
   color: #fff;
   padding: 2% 10%; }
-
-.mailing-list {
-  background-color: #a3919f;
-  padding-top: 20px;
-  padding-bottom: 40px; }
-
-.gallery {
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-direction: row;
-  flex-direction: row; }
-
-.gallery li {
-  flex: 2; }
 
 /* ---------------------------------------------------------------------
 Email Sign-up
@@ -434,10 +446,15 @@ Navigation
   padding: 12px;
   border: 1px solid #36454F;
   border-radius: 50%; }
-  .socialBar-item:hover {
+  @media (max-width: 670px) {
+    .socialBar-item {
+      float: left;
+      padding: 20px; } }
+  .socialBar-item:hover, .socialBar-item:focus {
     border: 1px solid #a3919f;
     color: #fff;
-    background: #a3919f; }
+    background: #a3919f;
+    padding-left: 10%; }
   .socialBar-item:active {
     transform: scale(1.05, 1.05); }
 

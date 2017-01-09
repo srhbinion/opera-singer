@@ -2,21 +2,31 @@
 Navigation
 --------------------------------------------------------------------- */
 
+
 .socialBar-item {
     float: right;
     margin-right: 25px;
     margin-top: 30px;
     padding: 12px;
     border: 1px solid $charcoal;
-    border-radius: 50%; 
-    &:hover{
+    border-radius: 50%;
+
+    @media (max-width: map-get($breakpoints, medium)) {
+        float: left;
+        padding: $gutter;
+    }
+    
+    &:hover, &:focus{
         border: 1px solid $heather;
         color: #fff;
         background: $heather;
+        padding-left: 10%;
     }
+    
     &:active{
         transform: scale(1.05,1.05);
     }
+
 }
 
 // .socialBar-item img {

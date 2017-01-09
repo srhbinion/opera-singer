@@ -20,19 +20,13 @@ Grid
       float: left;
       padding: $gutter;
     }
-  }
 
-  //media queries
-  //"grid__12--size"
-  @each $name, $size in $breakpoints {
-    @media (min-width: $size$name) {
-      @for $number from 1 through 12 {
-        &__#{$number}--#{$name} {
-          width: percentage($number/12);
-          float: left;
-          padding: $gutter;
-        }
-      }
+    @media (max-width: map-get($breakpoints, medium)) {
+      width: percentage(12/12);
+      float: left;
+      padding: $gutter;
+      margin: auto 0;
     }
   }
+
 }

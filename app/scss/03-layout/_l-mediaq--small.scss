@@ -1,7 +1,25 @@
 /* ---------------------------------------------------------------------
-Navigation Bar
+Media
 --------------------------------------------------------------------- */
 
-@-ms-viewport{
-  width: device-width;
+.gallery {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+
+  @media (max-width: map-get($breakpoints, medium)) {
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-direction: column;
+      flex-direction: column;
+  }
+}
+
+.gallery li {
+  flex: 2;
+  
+  @media (max-width: map-get($breakpoints, medium)) {
+      padding-bottom: 40px;
+  }
 }
