@@ -1,6 +1,7 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var browserSync = require('browser-sync').create();
+var ghPages = require('gulp-gh-pages');
 
 //greeting
 gulp.task('hello', function() {
@@ -26,7 +27,13 @@ gulp.task('sass', function() {
 gulp.task('browserSync', function() {
   browserSync.init({
     server: {
-      baseDir: '../app'
+      baseDir: 'app'
     },
   })
 })
+
+//gh-pages
+gulp.task('deploy', function() {
+  return gulp.src('./dist/**/*')
+    .pipe(ghPages());
+});
