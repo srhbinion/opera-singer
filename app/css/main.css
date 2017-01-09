@@ -102,10 +102,10 @@ textarea {
  hList
 --------------------------------------------------------------------- */
 h1 {
-  font-family: "Abril Fatface", cursive, cursive;
-  font-size: 3rem;
-  font-style: normal;
-  font-weight: 400; }
+  font-family: sans-serif;
+  font-size: 7rem;
+  text-transform: uppercase;
+  letter-spacing: .5rem; }
 
 h2 {
   font-family: "Abril Fatface", cursive, cursive;
@@ -128,6 +128,20 @@ a {
 /* ---------------------------------------------------------------------
 Navigation
 --------------------------------------------------------------------- */
+.img__feature {
+  display: table;
+  margin: 0 auto;
+  text-align: center;
+  border: 1px solid #333; }
+
+.img__feature__item {
+  display: table-cell;
+  vertical-align: middle; }
+
+.img__feature__item img {
+  max-height: 100%;
+  max-width: 100%; }
+
 .navbar {
   float: right;
   width: 100%; }
@@ -135,21 +149,34 @@ Navigation
 .navbar__item {
   margin: 5px 20px;
   padding: 12px 24px;
-  background: #36454F; }
+  background: #36454F;
+  max-width: 500px; }
 
 .navbar__item a {
   color: #fff;
   text-transform: uppercase;
   text-align: center; }
 
+.socialBar {
+  max-width: 593px; }
+
 .socialBar-item {
   float: right;
-  margin: 0 10px;
-  margin-right: 20px;
-  margin-bottom: 20px;
-  padding: 10px;
+  margin-right: 25px;
+  margin-top: 30px;
+  padding: 12px;
   border: 1px solid #36454F;
   border-radius: 50%; }
+
+.socialBar-item img {
+  width: 200px; }
+
+.socialBar-item:last-child {
+  float: left;
+  margin-top: -10px;
+  margin-left: 10px;
+  border-radius: 0;
+  border: 2px solid #fff; }
 
 /*03-layout*/
 /* ---------------------------------------------------------------------
@@ -221,101 +248,52 @@ Grid
     float: left;
     padding: 20px;
     border: 1px solid red; }
-  @media (min-width: 320px small) {
-    .grid__1--small {
+  @media (min-width: 670px medium) {
+    .grid__1--medium {
       width: 8.33333%;
       float: left;
       padding: 20px; }
-    .grid__2--small {
+    .grid__2--medium {
       width: 16.66667%;
       float: left;
       padding: 20px; }
-    .grid__3--small {
+    .grid__3--medium {
       width: 25%;
       float: left;
       padding: 20px; }
-    .grid__4--small {
+    .grid__4--medium {
       width: 33.33333%;
       float: left;
       padding: 20px; }
-    .grid__5--small {
+    .grid__5--medium {
       width: 41.66667%;
       float: left;
       padding: 20px; }
-    .grid__6--small {
+    .grid__6--medium {
       width: 50%;
       float: left;
       padding: 20px; }
-    .grid__7--small {
+    .grid__7--medium {
       width: 58.33333%;
       float: left;
       padding: 20px; }
-    .grid__8--small {
+    .grid__8--medium {
       width: 66.66667%;
       float: left;
       padding: 20px; }
-    .grid__9--small {
+    .grid__9--medium {
       width: 75%;
       float: left;
       padding: 20px; }
-    .grid__10--small {
+    .grid__10--medium {
       width: 83.33333%;
       float: left;
       padding: 20px; }
-    .grid__11--small {
+    .grid__11--medium {
       width: 91.66667%;
       float: left;
       padding: 20px; }
-    .grid__12--small {
-      width: 100%;
-      float: left;
-      padding: 20px; } }
-  @media (min-width: 920px large) {
-    .grid__1--large {
-      width: 8.33333%;
-      float: left;
-      padding: 20px; }
-    .grid__2--large {
-      width: 16.66667%;
-      float: left;
-      padding: 20px; }
-    .grid__3--large {
-      width: 25%;
-      float: left;
-      padding: 20px; }
-    .grid__4--large {
-      width: 33.33333%;
-      float: left;
-      padding: 20px; }
-    .grid__5--large {
-      width: 41.66667%;
-      float: left;
-      padding: 20px; }
-    .grid__6--large {
-      width: 50%;
-      float: left;
-      padding: 20px; }
-    .grid__7--large {
-      width: 58.33333%;
-      float: left;
-      padding: 20px; }
-    .grid__8--large {
-      width: 66.66667%;
-      float: left;
-      padding: 20px; }
-    .grid__9--large {
-      width: 75%;
-      float: left;
-      padding: 20px; }
-    .grid__10--large {
-      width: 83.33333%;
-      float: left;
-      padding: 20px; }
-    .grid__11--large {
-      width: 91.66667%;
-      float: left;
-      padding: 20px; }
-    .grid__12--large {
+    .grid__12--medium {
       width: 100%;
       float: left;
       padding: 20px; } }

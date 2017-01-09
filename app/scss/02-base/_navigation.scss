@@ -1,6 +1,22 @@
 /* ---------------------------------------------------------------------
 Navigation
 --------------------------------------------------------------------- */
+.img__feature {
+    display: table;
+    margin: 0 auto;   
+    text-align: center;
+    border: 1px solid #333;
+}
+
+.img__feature__item {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.img__feature__item img {
+    max-height: 100%;
+    max-width: 100%;
+}
 
 .navbar {
     float: right;
@@ -11,6 +27,7 @@ Navigation
     margin: 5px 20px;
     padding: 12px 24px;;
     background: $charcoal;
+    max-width: 500px;
 }
 
 .navbar__item a {
@@ -20,15 +37,26 @@ Navigation
 }
 
 .socialBar {
-
+    max-width: 593px;
 }
 
 .socialBar-item {
     float: right;
-    margin: 0 10px;
-    margin-right: 20px;
-    margin-bottom: 20px;
-    padding: 10px;
+    margin-right: 25px;
+    margin-top: 30px;
+    padding: 12px;
     border: 1px solid $charcoal;
     border-radius: 50%; 
+}
+
+.socialBar-item img {
+   width: 200px; 
+}
+
+.socialBar-item:last-child {
+    float: left;
+    margin-top: -10px;
+    margin-left: 10px;
+    border-radius: 0;
+    border: 2px solid #fff;
 }
