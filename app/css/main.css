@@ -369,13 +369,10 @@ section {
       margin-right: 10%; } }
   @media (max-width: 670px) {
     .hero {
-      margin: 10%;
-      margin-right: 10%;
-      font-size: 5rem;
-      float: right; } }
+      display: none; } }
   @media (max-width: 500px) {
     .hero {
-      margin: 10%;
+      margin: 0;
       font-size: 3.2rem;
       float: left; } }
 
@@ -439,31 +436,43 @@ Email Sign-up
 /* ---------------------------------------------------------------------
 Navigation
 --------------------------------------------------------------------- */
+.socialBar {
+  float: right; }
+  @media (max-width: 1250px) {
+    .socialBar {
+      margin-right: 50px;
+      float: left; } }
+
 .socialBar-item {
   float: right;
-  margin-right: 25px;
-  margin-top: 30px;
-  padding: 12px;
+  margin: 0 12px;
+  margin-top: 50px;
+  padding: 15px;
   border: 1px solid #36454F;
   border-radius: 50%; }
   @media (max-width: 670px) {
     .socialBar-item {
+      margin: 0 20px;
       float: left;
       padding: 20px; } }
   .socialBar-item:hover, .socialBar-item:focus {
     border: 1px solid #a3919f;
     color: #fff;
-    background: #a3919f;
-    padding-left: 10%; }
+    background: #a3919f; }
   .socialBar-item:active {
     transform: scale(1.05, 1.05); }
+  .socialBar-item a:visited {
+    color: #4f1c3c;
+    border: 2px solid #d7d0c6; }
 
 .socialBar-item:last-child {
   float: left;
   margin-top: 0px;
-  margin-left: 10px;
   border-radius: 0;
   border: 0; }
+  @media (max-width: 670px) {
+    .socialBar-item:last-child {
+      float: right; } }
   .socialBar-item:last-child:hover {
     border: 0;
     color: #36454F;

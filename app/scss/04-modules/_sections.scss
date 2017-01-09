@@ -12,6 +12,7 @@ body {
 
 nav {
   padding: $gutter;
+  
 }
 
 section {
@@ -34,14 +35,11 @@ section {
   }
 
   @media (max-width: map-get($breakpoints, medium)) {
-    margin: 10%;
-    margin-right: 10%;
-    font-size: 5rem;
-    float: right;
+    display: none;
   }
 
   @media (max-width: map-get($breakpoints, small)) {
-    margin: 10%;
+    margin: 0;
     font-size: 3.2rem;
     float: left;
   }

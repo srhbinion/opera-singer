@@ -2,29 +2,41 @@
 Navigation
 --------------------------------------------------------------------- */
 
+.socialBar {
+    float: right;
+    @media (max-width: map-get($breakpoints, large)) {
+        margin-right: 50px;
+        float: left;
+    }
+}
 
 .socialBar-item {
     float: right;
-    margin-right: 25px;
-    margin-top: 30px;
-    padding: 12px;
+    margin: 0 12px;
+    margin-top: 50px;
+    padding: 15px;
     border: 1px solid $charcoal;
     border-radius: 50%;
 
     @media (max-width: map-get($breakpoints, medium)) {
+        margin: 0 20px;
         float: left;
         padding: $gutter;
     }
     
-    &:hover, &:focus{
+    &:hover, &:focus {
         border: 1px solid $heather;
         color: #fff;
         background: $heather;
-        padding-left: 10%;
     }
     
     &:active{
         transform: scale(1.05,1.05);
+    }
+
+    & a:visited {
+        color: $wine;
+        border: 2px solid $dusty; 
     }
 
 }
@@ -36,15 +48,20 @@ Navigation
 .socialBar-item:last-child {
     float: left;
     margin-top: 0px;
-    margin-left: 10px;
     border-radius: 0;
     border: 0;
-    &:hover{
+
+    @media (max-width: map-get($breakpoints, medium)) {
+        float: right;
+    }
+
+    &:hover {
         border: 0;
         color: $charcoal;
         background: #fff;
     }
-    &:active{
+    
+    &:active {
         transform: none;
     }
 }
