@@ -110,7 +110,7 @@ h1 {
 
 h2 {
   font-family: "Yesteryear", cursive;
-  font-size: 5.2rem;
+  font-size: 4.8rem;
   font-weight: 600; }
 
 h3 {
@@ -437,22 +437,22 @@ Email Sign-up
 Navigation
 --------------------------------------------------------------------- */
 .socialBar {
-  float: right; }
+  float: left;
+  max-width: 600px; }
   @media (max-width: 1250px) {
     .socialBar {
-      margin-right: 50px;
       float: left; } }
 
 .socialBar-item {
   float: right;
-  margin: 0 12px;
-  margin-top: 50px;
-  padding: 15px;
+  margin: 0 11px;
+  margin-top: 40px;
+  padding: 12px;
   border: 1px solid #36454F;
   border-radius: 50%; }
   @media (max-width: 670px) {
     .socialBar-item {
-      margin: 0 20px;
+      margin: 0 8px;
       float: left;
       padding: 20px; } }
   .socialBar-item:hover, .socialBar-item:focus {
@@ -467,12 +467,13 @@ Navigation
 
 .socialBar-item:last-child {
   float: left;
-  margin-top: 0px;
+  margin-top: -5px;
   border-radius: 0;
   border: 0; }
   @media (max-width: 670px) {
     .socialBar-item:last-child {
-      float: right; } }
+      float: right;
+      margin-left: -10px; } }
   .socialBar-item:last-child:hover {
     border: 0;
     color: #36454F;

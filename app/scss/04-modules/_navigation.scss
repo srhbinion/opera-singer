@@ -3,23 +3,24 @@ Navigation
 --------------------------------------------------------------------- */
 
 .socialBar {
-    float: right;
+    float: left;
+    max-width: 600px;
     @media (max-width: map-get($breakpoints, large)) {
-        margin-right: 50px;
+        //margin-right: 50px;
         float: left;
     }
 }
 
 .socialBar-item {
     float: right;
-    margin: 0 12px;
-    margin-top: 50px;
-    padding: 15px;
+    margin: 0 11px;
+    margin-top: 40px;
+    padding: 12px;
     border: 1px solid $charcoal;
     border-radius: 50%;
 
     @media (max-width: map-get($breakpoints, medium)) {
-        margin: 0 20px;
+        margin: 0 8px;
         float: left;
         padding: $gutter;
     }
@@ -47,12 +48,13 @@ Navigation
 
 .socialBar-item:last-child {
     float: left;
-    margin-top: 0px;
+    margin-top: -5px;
     border-radius: 0;
     border: 0;
 
     @media (max-width: map-get($breakpoints, medium)) {
         float: right;
+        margin-left: -10px;
     }
 
     &:hover {
