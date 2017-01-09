@@ -3,6 +3,45 @@ Email Sign-up
 --------------------------------------------------------------------- */
 
 #mc_embed_signup {
-    clear: left; 
-    font-family: "PT Sans", sans-serif;
+    border: 1px solid $wine;
+}
+
+#mc_embed_signup {
+    background: $heather;
+}
+
+.input-group li {
+    float: left;
+    padding-top: $gutter;
+    padding-right: 20px;
+    font-size: .9rem;
+    font-style: sans-serif;
+    color: $wine;
+    display: inline-block;
+}
+
+.input-group li:last-child {
+    float: right;
+    width: 125px;
+    padding-right: 0px;
+}
+
+.indicates-required {
+    float: right;
+}
+
+.name {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+}
+
+.name li {
+    flex: 2;
+    padding-right: 20px;
+}
+
+.email {
+    padding-right: 20px;
 }

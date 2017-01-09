@@ -1,0 +1,70 @@
+/* ---------------------------------------------------------------------
+Navigation
+--------------------------------------------------------------------- */
+
+.socialBar-item {
+    float: right;
+    margin-right: 25px;
+    margin-top: 30px;
+    padding: 12px;
+    border: 1px solid $charcoal;
+    border-radius: 50%; 
+    &:hover{
+        border: 1px solid $heather;
+        color: #fff;
+        background: $heather;
+    }
+    &:active{
+        transform: scale(1.05,1.05);
+    }
+}
+
+// .socialBar-item img {
+//    width: 200px; 
+// }
+
+.socialBar-item:last-child {
+    float: left;
+    margin-top: 0px;
+    margin-left: 10px;
+    border-radius: 0;
+    border: 0;
+    &:hover{
+        border: 0;
+        color: $charcoal;
+        background: #fff;
+    }
+    &:active{
+        transform: none;
+    }
+}
+
+.navbar {
+    float: right;
+    width: 100%;
+    margin-top: -20px;
+}
+
+.navbar__item {
+    margin: 10px 10px;
+    padding: 12px 24px 0 24px;
+    background: $charcoal;
+    max-width: 500px;
+    &:hover{
+        color: #fff;
+        background: $heather;
+    }
+    &:active{
+        transform: scale(1.00,1.05);
+    }
+}
+
+.navbar__item a {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    text-align: center;
+    font-weight: 300;
+}
+

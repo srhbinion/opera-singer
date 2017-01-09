@@ -1,0 +1,19 @@
+/* ---------------------------------------------------------------------
+Hero
+--------------------------------------------------------------------- */
+.img__feature {
+    display: table;
+    margin: 0 auto;   
+    text-align: center;
+    border: 1px solid #333;
+}
+
+.img__feature__item {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.img__feature__item img {
+    max-height: 100%;
+    max-width: 100%;
+}

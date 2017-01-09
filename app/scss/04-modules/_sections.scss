@@ -15,14 +15,48 @@ nav {
 }
 
 section {
-  padding-bottom: $gutter*4;
+  padding: 0 10% $gutter 10%;
+}
+
+.button {
+  background-color: $wine;
+  color: $heather;
+  text-shadow: $charcoal 1px 0 10px;
 }
 
 .hero {
-  height: 350px;
-  background: $wine;
+    margin-top: -25%;
+    margin-right: 2%;
+}
+
+.section__caption {
+  margin-top: -15px;
+  color: $heather;
+}
+
+.section__caption--inverse {
+  color: $wine;
 }
 
 .footer {
   background-color: $wine;
+  color: #fff;
+  padding: 2% 10%;
+}
+
+.mailing-list {
+  background-color: $heather;
+  padding-top: $gutter;
+  padding-bottom: $gutter*2;
+}
+
+.gallery {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+}
+
+.gallery li {
+    flex: 2;
 }
