@@ -15,7 +15,7 @@
   "bugs": {
     "url": "https://github.com/srhbinion/opera-singer/issues"
   },
-  "homepage": "https://github.com/srhbinion/opera-singer#readme",
+  "homepage": "https://github.com/srhbinion/opera-singer/blob/master/app/index.html",
   "devDependencies": {
     "browser-sync": "^2.17.2",
     "gulp": "^3.9.1",
