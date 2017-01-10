@@ -33,7 +33,7 @@ gulp.task('browserSync', function() {
 })
 
 //gh-pages
-gulp.task('deploy', ['watch'] function() {
+gulp.task('deploy', ['watch'], function() {
   return gulp.src('./dist/**/*')
     .pipe(deploy())
 });
