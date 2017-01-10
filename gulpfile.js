@@ -10,14 +10,14 @@ gulp.task('hello', function() {
 
 //build scss
 gulp.task('watch', ['browserSync', 'sass'], function (){
-  gulp.watch('app/scss/**/*.scss', ['sass']); 
+  gulp.watch('scss/**/*.scss', ['sass']); 
 });
 
 //compile scss and refresh browser
 gulp.task('sass', function() {
-  return gulp.src('app/scss/**/*.scss')
+  return gulp.src('scss/**/*.scss')
     .pipe(sass())
-    .pipe(gulp.dest('app/css'))
+    .pipe(gulp.dest('css'))
     .pipe(browserSync.reload({
       stream: true
     }))
@@ -27,7 +27,7 @@ gulp.task('sass', function() {
 gulp.task('browserSync', function() {
   browserSync.init({
     server: {
-      baseDir: 'app'
+      baseDir: '.'
     },
   })
 })
